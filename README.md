@@ -41,7 +41,15 @@ No hardcoded currency assumption. Each price record stores
 its currency alongside the value.
 ## Screenshots
 
-*(add 2–3 screenshots here)*
+**Manual run — 5 products, mixed currencies, per-product thresholds:**
+
+![Manual Run](screenshot-main.png)
+
+**Auto mode — 7 consecutive runs at 5-minute intervals over 32 minutes. 
+Same ASIN returns HKD/EUR/USD depending on session, all parsed correctly. 
+Each alert in the log matches a Telegram message on the right:**
+
+![Auto Mode](screenshot-auto.png)
 
 ## How to Run
 
