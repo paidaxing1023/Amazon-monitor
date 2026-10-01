@@ -27,6 +27,18 @@ Telegram alerts when the price drops below a threshold.
 - Scheduled monitoring with countdown timer
 - Persistent settings in JSON
 
+## Multi-Currency Handling
+
+Amazon may return prices in different currencies for the same 
+ASIN depending on session, IP, or region. This tool parses 
+all of them automatically:
+
+- `USD 41.96` → currency=USD, price=41.96
+- `HKD 329.23` → currency=HKD, price=329.23
+- `$ 16.99` → currency=USD, price=16.99
+
+No hardcoded currency assumption. Each price record stores 
+its currency alongside the value.
 ## Screenshots
 
 *(add 2–3 screenshots here)*
