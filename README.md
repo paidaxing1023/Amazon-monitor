@@ -51,6 +51,18 @@ Each alert in the log matches a Telegram message on the right:**
 
 ![Auto Mode](screenshot-auto.png)
 
+## Sample Output
+
+Data is stored in CSV format — ready for analysis in Excel or Python:
+
+| timestamp | asin | title | price | currency | rating | stock |
+|-----------|------|-------|-------|----------|--------|-------|
+| 2026-10-01 09:20:11 | B0CKYZPPMJ | Zinus Memory Foam 8 Inch... | 682.63 | HKD | 4.4 | Only 2 left |
+| 2026-10-01 09:20:11 | B01LYNW421 | Beckham Hotel Collection... | 329.23 | HKD | 4.3 | In Stock |
+| 2026-10-01 09:27:32 | B01LYNW421 | Beckham Hotel Collection... | 41.96 | USD | 4.3 | In Stock |
+| 2026-10-01 09:46:43 | B01LYNW421 | Beckham Hotel Collection... | 52.8 | EUR | 4.3 | In Stock |
+
+Same ASIN, three different currencies across sessions — all parsed correctly.
 ## How to Run
 
 ```bash
